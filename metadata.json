@@ -1,0 +1,6 @@
+{
+  "name": "AURA - The L0 Agent",
+  "description": "An AI-native L0 support layer designed for enterprise IT environments. Minimal friction, maximum resolution.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
