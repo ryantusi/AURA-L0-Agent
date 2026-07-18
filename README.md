@@ -1,8 +1,11 @@
-# AURA: Level 0 AI-Native Operator Prototype
+# AURA: The L0 Agent
+**CIS Gilead Ideathon 2026 Prototype**
 
-AURA (Automated Resolution and User Assistance) is an ultra-advanced, enterprise-grade AI-native Level 0 IT Support Operator prototype. It is designed to act as the first line of defense for corporate IT support, resolving low-complexity issues autonomously via voice and chat, orchestrating warm escalations, co-piloting active IT service agents, and performing predictive self-healing actions.
+> Live Demo Deployed: https://aura-l0-agent.onrender.com/
 
-This prototype was built using **React 18**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Express**, with full-stack integrations including **Gemini 3.5 Flash** and **ElevenLabs TTS/STT**.
+AURA is an adaptive AI-powered voice and non-voice operational intelligence platform that introduces the L0 Autonomous Support Layer for Enterprise IT. It autonomously resolves infrastructure incidents at first contact, remediates endpoint issues, eliminates manual ticket documentation, intelligently routes complex cases to skill-matched engineers with complete context, supports human L1/L2 agents, and proactively predicts and prevents recurring or major P1/P2 incidents before users are impacted.
+
+This prototype was built using **React 18**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Express**, with full-stack integrations including **ElevenLabs TTS/STT** for AI Voice.
 
 ---
 
@@ -12,7 +15,7 @@ Follow these simple steps to run this project on your local machine using VS Cod
 
 ### Prerequisites
 - **Node.js**: Ensure you have Node.js (version 18 or higher) installed. Download it from [nodejs.org](https://nodejs.org/).
-- **VS Code**: Recommended code editor for editing and debugging.
+- **IDE**: VSCode - Recommended code editor for editing and debugging.
 
 ---
 
@@ -26,18 +29,14 @@ This command downloads all necessary client and server libraries defined in `pac
 ---
 
 ### Step 2: Configure Environment Variables
-1. Duplicate the `.env.example` file in the root directory and rename the copy to `.env`.
+1. Create the file `.env`
 2. Open the `.env` file and fill in your keys:
 
 ```env
-# 1. Gemini API Key (For the cinematic AI Terminal Chat)
-# Get a free key at: https://aistudio.google.com/
-GEMINI_API_KEY="your_actual_gemini_api_key_here"
-
-# 2. Local URL (For self-referential routing)
+# 1. Local URL (For self-referential routing)
 APP_URL="http://localhost:3000"
 
-# 3. ElevenLabs API Key (For Voice Registration, Verification, and TTS speaking)
+# 2. ElevenLabs API Key (For Voice Registration, Verification, and TTS speaking)
 # Get an API key at: https://elevenlabs.io/
 # (A placeholder key is pre-configured, but you should replace it with your own)
 ELEVEN_LABS_API_KEY="your_actual_eleven_labs_api_key_here"
@@ -149,13 +148,13 @@ During development, the Express backend serves as the single source of truth, mo
 
 ---
 
-## ❓ Frequently Asked Questions
+## Acknowledgement
 
-### What happens if I don't configure my ElevenLabs API Key?
-If no `ELEVEN_LABS_API_KEY` is set in your `.env` file, the voice gateway will fallback to standard mock responses and browser-based delays, allowing you to click, run, and present the prototype interface fully even without internet-connected API keys.
+| Channel | Details |
+|---|---|
+| Company | Cognizant Technology Solutions |
+| Client | Gilead Sciences Inc |
+| Name | Ryan Ahmed Tusi - 2485906 |
+| Event | CIS Gilead Ideathon 2026 - AIOps Theme |
 
-### What about the Gemini Chat?
-If no `GEMINI_API_KEY` is present, AURA's Terminal Chat switches into a highly customized, simulated diagnostic terminal that answers your inputs using structured, cinematic diagnostic report fallbacks!
-
-### Can I share or host this prototype?
-Absolutely! Since it uses an Express + Vite full-stack architecture, you can deploy it to **Heroku**, **Render**, **Cloud Run**, or any container hosting provider that runs standard Node.js environments.
+---
