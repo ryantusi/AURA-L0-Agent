@@ -842,7 +842,7 @@ export default function App() {
                     {
                       id: "whitepaper",
                       title: "1. AURA Whitepaper",
-                      fileName: "AURA Whitepaper.docx",
+                      fileName: "AURA_Whitepaper.docx",
                       assetName: "AURA_Whitepaper.docx",
                       desc: "The full document about the core concept, operational metrics, and L0 support layer vision.",
                       icon: BookOpen,
@@ -852,7 +852,7 @@ export default function App() {
                     {
                       id: "presentation",
                       title: "2. AURA Presentation",
-                      fileName: "AURA Presentation.pptx",
+                      fileName: "AURA_Presentation.pptx",
                       assetName: "AURA_Presentation.pptx",
                       desc: "Visual presentation slide deck outlining problem statements, architecture flows, and business impacts.",
                       icon: Presentation,
@@ -861,8 +861,8 @@ export default function App() {
                     },
                     {
                       id: "ticket_analysis",
-                      title: "3. Ticket Analysis Master",
-                      fileName: "Ticket Analysis Master.xlsx",
+                      title: "3. Ticket Analysis Workbook",
+                      fileName: "Ticket_Analysis_Master.xlsx",
                       assetName: "Ticket_Analysis_Master.xlsx",
                       desc: "Evidence-backed automated exploratory data analysis workbook with telemetry analysis & core incident matrices.",
                       icon: FileSpreadsheet,
@@ -872,7 +872,7 @@ export default function App() {
                     {
                       id: "prototype",
                       title: "4. AURA Prototype",
-                      fileName: "AURA Prototype.docx",
+                      fileName: "AURA_Prototype.docx",
                       assetName: "AURA_Prototype.docx",
                       desc: "Explains the prototype's technical architecture, build details, and integration steps.",
                       icon: FileText,
