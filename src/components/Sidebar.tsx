@@ -94,22 +94,6 @@ export default function Sidebar({
                 );
               })}
             </div>
-
-            {/* Dynamic stats */}
-            <div className="bg-zinc-950/40 border border-[#e2e2e4]/10 rounded-xl p-3.5 space-y-2 mt-4 font-mono text-[10px] text-zinc-400">
-              <div className="flex justify-between border-b border-white/5 pb-1.5">
-                <span>SYSTEM LOAD</span>
-                <span className="text-white">41 req/s</span>
-              </div>
-              <div className="flex justify-between border-b border-white/5 pb-1.5">
-                <span>JITTER RATE</span>
-                <span className="text-white">4ms</span>
-              </div>
-              <div className="flex justify-between">
-                <span>HOST UPTIME</span>
-                <span className="text-white">99.998%</span>
-              </div>
-            </div>
           </div>
         )}
       </div>
