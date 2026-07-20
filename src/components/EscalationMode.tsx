@@ -143,7 +143,7 @@ export default function EscalationMode({
             <div className="space-y-1.5">
               <span className="text-[9px] text-zinc-500 font-mono block uppercase tracking-widest font-semibold">AURA AUTOMATED WORK NOTES</span>
               <p className="bg-black/40 p-3 rounded-lg text-[10.5px] text-zinc-400 font-sans leading-relaxed border border-white/5 font-light italic">
-                "AURA automatically initiated a cloud-profile trace for Veeva CRM authentication logs. Found persistent 'Access Denied' flag under OAuth token S-119283. Internal directory lock-out detected. Attempted token revocation, but server responded with upstream conflict. Manual remediation required; escalating to Contact Center agent with high-context briefing dossier."
+                "AURA automatically initiated a cloud-profile trace for Veeva CRM authentication logs. Found persistent 'Access Denied' flag under OAuth token S-119283. Internal directory lock-out detected. Veeva is a validated GxP system, autonomous action is intentionally withheld. Manual remediation required; escalating to Contact Center agent with high-context briefing dossier."
               </p>
             </div>
           </div>
@@ -351,6 +351,10 @@ export default function EscalationMode({
                         <li className="flex items-start gap-2">
                           <span className="text-emerald-400 font-bold mt-0.5">&bull;</span>
                           <span>Active Directory profile is in active, unrestricted status.</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400 font-bold mt-0.5">&bull;</span>
+                          <span>Veeva is a validated GxP system, autonomous action is intentionally withheld.</span>
                         </li>
                       </ul>
                     </div>
